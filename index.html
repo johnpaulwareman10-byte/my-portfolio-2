@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Paul | Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">JP<span>.dev</span></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li> 
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="theme-toggle" class="theme-btn"><i class="fas fa-moon"></i></button></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">John Paul</span></h1>
+            <p>Full Stack Developer | Problem Solver | Tech Enthusiast</p>
+
+            <div class="hero-btns">
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="JohnPaul_Resume.pdf" class="btn btn-outline" download>Download CV</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://facebook.com/iyong-username" target="_blank">Facebook</a>
+                <a href="https://linkedin.com/in/iyong-username" target="_blank">LinkedIn</a>
+                <a href="https://github.com/johnpaulwareman10-byte" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </header>
+   <section id="contact" class="contact-section">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+            
+            <input type="hidden" name="access_key" value="97a34949-d8c4-4c6c-8e90-68217094c5a8">
+
+            <input type="text" name="name" placeholder="Pangalan mo" required>
+            <input type="email" name="email" placeholder="Email mo" required>
+            <textarea name="message" placeholder="Ang iyong mensahe..." required></textarea>
+            
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    I am a <strong>Full Stack Developer</strong> with a knack for turning complex problems into elegant, user-friendly solutions. I thrive on the challenge of bridging the gap between clean code and impactful design.
+                </p>
+            </div>
+            
+            <div class="tech-stack">
+                <div class="tech-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
+                <div class="tech-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+                <div class="tech-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                <div class="tech-item"><i class="fab fa-react"></i><span>React</span></div>
+                <div class="tech-item"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+            </div>
+        <div class="project-grid">
+            <div class="project-card"data-category="frontend">
+                <div class="project-info">
+                    <h3>Coming Soon Landing Page</h3>
+                    <p>Isang professional landing page na may Google Sheets database integration at email validation.</p>
+                    <a href="https://johnpaulwareman10-byte.github.io/coming-soon-page/" target="_blank" class="project-link">Live Demo →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 John Paul. Built with ❤️ and Code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
